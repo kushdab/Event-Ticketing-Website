@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibambe na Tiko - Concert & Comedy Show Tickets</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Background Image */
+        body {
+            background: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff784e;
+        }
+
+        /* Main Section */
+        .main {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+            padding: 50px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin-top: 100px; /* Offset for navbar */
+        }
+
+        h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 10px 25px;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #ff784e;
+        }
+
+        .btn-secondary {
+            background-color: #2196f3;
+        }
+
+        .btn-secondary:hover {
+            background-color: #42a5f5;
+        }
+
+        /* Keyframes for Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Concert Tickets</a></li>
+            <li><a href="#">Comedy Shows</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="main">
+        <h1>Welcome to Jibambe na Tiko!</h1>
+        <p>Get your tickets for the best concerts and comedy shows in town. Secure your spot with just a click!</p>
+        <button class="btn">Buy Concert Tickets</button>
+        <button class="btn btn-secondary">Buy Comedy Show Tickets</button>
+    </div>
+
+</body>
+</html>
